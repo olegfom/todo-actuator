@@ -1,0 +1,5 @@
+Enable Spring Boot Actuator including the Shutdown link. (just need to use https with user/password to prevent unauthorized access)
+
+Test: curl -i -X POST http://localhost:8080/shutdown
+
+
