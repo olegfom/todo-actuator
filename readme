@@ -4,4 +4,8 @@ Test: curl -i -X POST http://localhost:8080/shutdown
 
 Includes Custom EndPoint todo-stats and Custom HealthCheck metrics "ToDoHealthCheck"
 
+To use Grafana with Prometheus do the following:
 
+docker run  -p 127.0.0.1:3000:3000 bitnami/grafana:latest
+docker run -p 9090:9090 -v ~/Downloads/prometheus.yml:/etc/prometheus/prometheus.yml bitnami/prometheus
+Then open grafana and configure a Datasource for Prometheus, create a new Dashboard and add queries for api_get_api_todos_total and api_post_api_todos_total
