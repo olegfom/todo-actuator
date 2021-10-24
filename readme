@@ -2,4 +2,6 @@ Enable Spring Boot Actuator including the Shutdown link. (just need to use https
 
 Test: curl -i -X POST http://localhost:8080/shutdown
 
+Includes Custom EndPoint todo-stats and Custom HealthCheck metrics "ToDoHealthCheck"
+
 
